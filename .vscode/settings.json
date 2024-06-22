@@ -1,4 +1,6 @@
 {
     "editor.indentSize": "tabSize",
-    "ruff.nativeServer": true
+    "ruff.nativeServer": true,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false
 }
