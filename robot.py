@@ -1,11 +1,11 @@
 import commands2
 import wpilib
 import wpilib.drive
-
+import robotcontainer
 
 class Robot(commands2.TimedCommandRobot):
 	def robotInit(self):
-		pass
+		self.container = robotcontainer.RobotContainer(isReal = self.isReal())
 
 	def autonomousInit(self):
 		pass
