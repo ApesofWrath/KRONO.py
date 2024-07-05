@@ -1,5 +1,6 @@
-import wpilib
 import commands2
+import wpilib
+
 
 class RobotContainer:
 	def __init__(self, isReal=True):
@@ -9,7 +10,7 @@ class RobotContainer:
 		self.driverController = wpilib.XboxController(0)
 		# TODO: robotDrive.setDefaultCommand
 
-	def configureButtonBindings(seld) -> None:
+	def configureButtonBindings(self) -> None:
 		pass
 
 	def getAutonomousCommand(self) -> commands2.Command:
