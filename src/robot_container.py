@@ -3,7 +3,7 @@ import wpilib
 
 
 class RobotContainer:
-	def __init__(self, isReal=True):
+	def __init__(self, isReal: bool):
 		# TODO: subsystems
 		self.robotDrive = None
 		self.configureButtonBindings()

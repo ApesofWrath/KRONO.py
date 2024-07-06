@@ -6,20 +6,20 @@ robotpy_version = "2024.3.2.1"
 
 # Which extra RobotPy components should be installed
 robotpy_extras = [
-    "all",
-    # "apriltag",
-    # "commands2",
-    # "cscore",
-    # "navx",
-    # "pathplannerlib",
-    # "phoenix5",
-    # "phoenix6",
-    # "photonvision",
-    # "playingwithfusion",
-    # "rev",
-    # "romi",
-    # "sim",
-    # "xrp",
+	"all",
+	# "apriltag",
+	# "commands2",
+	# "cscore",
+	# "navx",
+	# "pathplannerlib",
+	# "phoenix5",
+	# "phoenix6",
+	# "photonvision",
+	# "playingwithfusion",
+	# "rev",
+	# "romi",
+	# "sim",
+	# "xrp",
 ]
 
 # Other pip packages to install
@@ -36,12 +36,12 @@ target-version = "py312"
 [tool.ruff.lint]
 
 select = [
-    "E",
-    "F",
-    "RUF",
+	"E",
+	"F",
+	"RUF",
 ]
 fixable = [
-    "ALL",
+	"ALL",
 ]
 
 [tool.ruff.format]
