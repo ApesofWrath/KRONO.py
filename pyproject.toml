@@ -6,14 +6,13 @@ robotpy_version = "2024.3.2.1"
 
 # Which extra RobotPy components should be installed
 robotpy_extras = [
-	"all",
 	# "apriltag",
-	# "commands2",
+	"commands2",
 	# "cscore",
-	# "navx",
-	# "pathplannerlib",
+	"navx",
+	"pathplannerlib",
 	# "phoenix5",
-	# "phoenix6",
+	"phoenix6",
 	# "photonvision",
 	# "playingwithfusion",
 	# "rev",
