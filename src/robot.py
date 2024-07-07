@@ -1,6 +1,4 @@
 import commands2
-import wpilib
-import wpilib.drive
 from robot_container import RobotContainer
 
 # I've put all the documented methods in the robot class so that they are easier
@@ -12,11 +10,10 @@ from robot_container import RobotContainer
 class Robot(commands2.TimedCommandRobot):
 	# * Main
 	def robotInit(self) -> None:
-		self.scheduler = commands2.CommandScheduler.getInstance()
-		self.container = RobotContainer(isReal=self.isReal())
+		self.container = RobotContainer()
 
 	def robotPeriodic(self) -> None:
-		self.scheduler.run()
+		self.container.scheduler.run()
 
 	# * Autonomous
 	def autonomousInit(self) -> None:

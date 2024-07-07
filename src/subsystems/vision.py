@@ -1,3 +1,6 @@
-class Vision:
-	def __init__(self):
+import commands2
+
+
+class Vision(commands2.Subsystem):
+	def __init__(self) -> None:
 		pass

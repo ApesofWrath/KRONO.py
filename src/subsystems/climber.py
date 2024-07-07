@@ -1,3 +1,6 @@
-class Climber:
-	def __init__(self):
+import commands2
+
+
+class Climber(commands2.Subsystem):
+	def __init__(self) -> None:
 		pass
