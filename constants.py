@@ -42,17 +42,13 @@ class Drive:
 	turnRatio = (150 / 7)
 	driveRatio = (50 / 14) * (17 / 27) * (45 / 15)
 
-	drive_p = .01
-	drive_i = 0
-	drive_d = 0
+	drivePID = (.01, 0, 0)
 	drive_v = 12 / (100 / driveRatio)
 
-	turn_p = 40
-	turn_i = 0
-	turn_d = 0
+	turn_PID = (40, 0, 0)
 
 	# DRIVETRAIN
-	maxSpeed = 3 * unit.meter / unit.second  # 3 meters per second
+	maxSpeed = 15.1 * unit.feet / unit.second  # 3 meters per second
 	maxAngularSpeed = pi * unit.radian / unit.second  # 1/2 rotation per second
 	chassisLength = 31.5 * unit.inch
 
