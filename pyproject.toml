@@ -2,24 +2,12 @@
 [tool.robotpy]
 
 # Version of robotpy this project depends on
-robotpy_version = "2024.3.2.1"
+robotpy_version = "2024.3.2.2"
 
 # Which extra RobotPy components should be installed
 robotpy_extras = [
     "all",
-    # "apriltag",
-    # "commands2",
-    # "cscore",
-    # "navx",
-    # "pathplannerlib",
-    # "phoenix5",
-    # "phoenix6",
-    # "photonvision",
-    # "playingwithfusion",
-    # "rev",
-    # "romi",
-    # "sim",
-    # "xrp",
+    # "apriltag", "commands2", "cscore", "navx", "pathplannerlib", "phoenix5", "phoenix6", "photonvision", "playingwithfusion", "rev", "romi", "sim", "xrp"
 ]
 
 # Other pip packages to install

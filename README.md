@@ -4,10 +4,8 @@ A port of the Krono code in Python.
 
 ## Development Environment Setup
 
-1. [Install Miniconda](https://docs.anaconda.com/free/miniconda/)
-2. [Install the Ruff VScode extension](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
-3. Clone this repo using the `git clone https://github.com/ApesofWrath/krono.py` command
-4. Open the cloned repo in vscode; then, in the integrated terminal, run `conda env create -f environment.yml` to create the conda environment. This will prompt you to install a variety of packages, just say yes.
-5. Run `conda activate FRC` to enable the conda environment. VSCode may prompt you to switch the interpreter. If it does, say yes and skip step 6; if it does not, continue.
-6. Open any Python file in VSCode and switch the VScode interpreter to the newly created conda environment by looking at the toolbar in the bottom right, clicking on the label stating "Python [some version] 64-bit," and finally selecting "Python 3.12.3 (FRC)" in the popover menu.
-7. You should be good to go 👍
+1. [Install Python and RobotPy](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/python-setup.html#prerequisites)
+2. Clone this repo using the `git clone https://github.com/ApesofWrath/krono.py` command
+3. OPTIONAL! Use an environment manager to seperate your environment from the global environment
+4. Open the cloned repo in vscode; then, in the integrated terminal, run `python -m robotpy sync`.
+5. You should be good to go 👍
