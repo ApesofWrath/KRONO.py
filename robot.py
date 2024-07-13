@@ -7,9 +7,11 @@ import wpilib.drive
 class Robot(commands2.TimedCommandRobot):
 	def robotInit(self):
 		self.container = robot_container.RobotContainer(isReal=self.isReal())
+		self.autonomousCommand = self.container.getAutonomousCommand()
 
 	def autonomousInit(self):
-		pass
+		if type(self.autonomousCommand) is commands2.Command:
+			self.autonomousCommand.schedule()
 
 	def autonomousPeriodic(self):
 		pass
@@ -18,10 +20,11 @@ class Robot(commands2.TimedCommandRobot):
 		pass
 
 	def teleopPeriodic(self):
-		pass
+		if type(self.autonomousCommand) is commands2.Command:
+			self.autonomousCommand.cancel()
 
 	def testInit(self):
-		pass
+		commands2.CommandScheduler.getInstance().cancelAll()
 
 	def testPeriodic(self):
 		pass
